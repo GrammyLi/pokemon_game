@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🐧Magician Sweeping</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../../img/davizi.jpg">
+</head>
+
+<body>
+    <game>
+        <ul class="selector">
+            <li data-mode="small" class="magician-mode">Small (8×8)</li>
+            <li data-mode="mid" class="magician-mode">Mid (10×10)</li>
+            <li data-mode="large" class="magician-mode">Large (16×16)</li>
+        </ul>
+        <p class="result">
+            <label>Marked:</label>
+            <span class="magician-marked-time">0 / 15</span>
+            <label>Timer:</label>
+            <span class="magician-timer">0:00</span>
+        </p>
+        <div class="magician-container">
+
+        </div>
+    </game>
+
+
+    <!-- <div class="magician-set-square">
+    N * N 的地图
+    <input class="magician-input-row">
+    雷的数量：
+    <input class="magician-input-number">
+</div>
+
+<button class="magician-new-game">new-game</button> -->
+
+
+    <script src="./utils.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

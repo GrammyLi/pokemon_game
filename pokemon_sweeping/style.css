@@ -1,0 +1,175 @@
+/*伪元素*/
+.cell {
+    float: left;
+    /*width: 23px;*/
+    /*height: 23px;*/
+    /*margin: 2px 2px;*/
+    /*!* text-align center 可以让 inline 元素居中 *!*/
+    /*text-align: center;*/
+    font-size: 0;
+    /*border: brown 1px dashed;*/
+    padding: 0;
+    width: 25px;
+    height: 25px;
+   
+    border: 2px solid #eee;
+     
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+.magician-container {
+    margin-left: 55px;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.magician-gray {
+    background-color: #ccc;
+}
+
+.cell:hover {
+    background: #ddd;
+}
+.clicked:hover {
+    background-color: white;
+}
+.magician-pink {
+    background-color: pink;
+}
+.magician-white {
+    background-color: white;
+}
+.clicked {
+    font-size: 14px;
+}
+.marked {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-image: url(images/p.png);
+    /* background: #efefef;
+    font-size: 14px; */
+}
+.marked:hover {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-image: url(images/p.png);
+    /* background: #efefef;
+    font-size: 14px; */
+}
+/* #flagBlack, #bombBlack, #eight {
+    color: #000;
+} */
+.one {
+    color: #0000ff;
+}
+.bombRed {
+    color: #cc0000;
+}
+.two {
+    color: #00aa44;
+}
+.three {
+    color: #d45500;
+}
+.four {
+    color: #aa0000;
+}
+.five {
+    color: #808000;
+}
+.six {
+    color: #0088aa;
+}
+.nine {
+    color: #aa0088;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+game {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    align-items: center;
+}
+
+
+.selector {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2em;
+    padding: 0;
+    list-style-type: none;
+    color: black;
+    font-weight: 700;
+}
+.selector li {
+    display: block;
+    padding: 0.6em 1em;
+    margin: 0 0.5em;
+    border: 1px solid #888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.selector li:hover {
+    background: #00208840;
+}
+.selector li:active {
+    background: #202088dd;
+    color: white;
+}
+
+.result {
+    margin: 0 0 2em;
+}
+.result label {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+}
+
+.result span {
+    display: inline-block;
+    padding: 0.3em;
+    margin: 0 0 0 1em;
+    text-align: center;
+    width: 4em;
+    height: 1.4em;
+    line-height: 1.4em;
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+.result.won span {
+    background-color: #88cc88;
+}
+.result.lost span {
+    background-color: #dd7777;
+}
+
+.cover-image {
+    background-size: 100% 100%;
+    object-fit: cover;
+    /* background-image: url(images/1.png); */
+} 
+
+.pikachu {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-image: url(images/2.png);
+}
+
+.pikachu:hover {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-image: url(images/2.png);
+}
