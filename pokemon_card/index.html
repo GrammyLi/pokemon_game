@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+    <title>🐧Magician Pokemons</title>
+    <link rel="shortcut icon" href="../../img/davizi.jpg">
+</head>
+
+<body>
+    <div class="start">
+        <div class='title'>Magician Pokemons </div>
+        <h2 class="sub-title">This is a Pokemon themed memory game. Flip the cards and match until you find all the
+            matching pairs!</h2>
+        <button class="button-style magician-start-game">Starting</button>
+        <div class="main-container">
+            <img class="main-page-pokemon" src="./img/pichu.png" alt="">
+            <img class="main-page-pokemon" src="./img/pikachu.gif" alt="">
+        </div>
+    </div>
+
+    <div class="game hidden">
+        <div class="cardArea">
+
+        </div>
+        <div class="footer">
+
+            <div class='game-style attempts-area'>Attempts: <span class="magician-attempts">0</span> </div> /
+
+            <div class='game-style matches-area'>Matches: <span class="magician-matches">0</span> </div> /
+            <div class='game-style'>Timer: <span class="magician-timer">00:00</span> </div>
+            <div class="control-button">
+                <button class="button-style backButton magician-back-game">Back</button>
+                <button class="button-style resetButton magician-reset-game">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="./utils.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
