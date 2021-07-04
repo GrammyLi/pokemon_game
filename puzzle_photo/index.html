@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magician Puzzle Game</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="davizi.jpg">
+</head>
+
+<body>
+    <audio id="id-audio-player" src="./music/朝日温子 - K.K. Idol (しずえ Ver.).mp3"></audio>
+
+    <audio class="gua-cut" src="./music/merge.mp3"></audio>
+
+    <div id="top">
+        <header>
+            <h1 class="gua-game-title">Magician-Dunk-Puzzle</h1>
+        </header>
+
+        <div style="margin-top:10px; height:1000px;">
+
+            <div>
+
+                <div style="width:50%; float:left; display:inline;">
+
+                    <div style="text-align:center; height:30px">
+                        <h1 id="message">
+                            Move-Times :
+                            <span class="gua-times"> 0 </span>
+                        </h1>
+
+                    </div>
+                    <div class="gua-game-canvas">
+                        <canvas id="canvas" height="450px" width="450px"></canvas>
+                    </div>
+                </div>
+                <div class="gua-game-original-photos">
+                    <div>
+                        <h1 class="gua-game-original-title">
+                            Original-Image:
+                        </h1>
+                        <select>
+                            <option value="Dunk">Dunk</option>
+                            <option value="Dragonball">Dragonball</option>
+                            <option value="Pokemons">Pokemons</option>
+                            <option value="Teacher Liu">Teacher Liu</option>
+                            <option value="Teacher Lin">Teacher Lin</option>
+                            <option value="Teacher Shi">Teacher Shi</option>
+                        </select>
+                    </div>
+                    <div class="davizi-imgs">
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./utils.js"></script>
+        <script src="./music.js"></script>
+        <script src="./main.js"></script>
+</body>
+
+</html>
