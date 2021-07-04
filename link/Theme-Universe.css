@@ -1,0 +1,206 @@
+body {
+    color: white;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(41,32,85);
+    background-position: center;
+}
+
+.loading {
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgb(41,32,85);
+    transition: all 1s;
+}
+
+.loading div {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    color: white;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 280%;
+    font-family: "Meiryo UI";
+}
+table {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(41,32,85);
+    border-spacing: 12px;
+}
+td {
+    width: 62px;
+    height: 62px;
+    font-size: 20px;
+    text-align: center;
+    color: #8ECC39;
+    transition: background-image 500ms, background-color 500ms, transform 500ms;
+}
+td:hover {
+    transform: scale(1.4);
+}
+#id-span-score {
+    font-size: x-large;
+    font-weight: bold;
+    color: orangered;
+}
+.score-text {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.c0 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/0.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c1 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/1.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c2 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/2.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c3 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/3.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c4 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/4.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c5 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c6 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/6.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c7{
+    font-size: 0px;
+    background-image: url("Theme-Universe/7.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c8 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/8.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c9 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/9.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c10 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/10.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c11 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/11.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c12 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/12.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c13 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/13.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c14 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/14.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.c15 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/15.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.t0 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/ball.png");
+    background-position: center;
+    background-size: 100%;
+}
+.t1 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/t1.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.t2 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/t2.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.t3 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/t3.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.t4 {
+    font-size: 0px;
+    background-image: url("Theme-Universe/t4.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.tx {
+    font-size: 0px;
+    background-image: url("Theme-Universe/tx.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.ty {
+    font-size: 0px;
+    background-image: url("Theme-Universe/ty.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.highlighted {
+    transform: scale(1.4);
+}
+

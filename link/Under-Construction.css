@@ -1,0 +1,49 @@
+body {
+    color: white;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(41,32,85);
+    background-position: center;
+}
+h1 {
+    font-size: 280%;
+    font-family: "Meiryo UI";
+}
+table {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(41,32,85);
+    border-collapse: collapse;
+}
+td {
+    border-style: solid;
+    border-width: 1px;
+    width: 62px;
+    height: 62px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    transition: background-image 500ms, background-color 500ms, transform 500ms;
+}
+#id-span-score {
+    font-size: x-large;
+    font-weight: bold;
+    color: orangered;
+}
+.score-text {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.highlighted {
+    border-style: inset;
+}
+
+.c0 {
+    background-color: #4AC0FD;
+}
+
+.tx, .ty, .t1, .t2, .t3, .t4, .t0 {
+    background-color: #F43706;
+}

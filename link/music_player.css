@@ -1,0 +1,166 @@
+.now-playing {
+    padding-bottom: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible {
+    opacity: 1;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background: black;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+body {
+    /* background: #cfffba; */
+  }
+  
+  .container {
+    margin-top: 1rem;
+    position: block;
+    /* top: 15%; */
+    left: 50%;
+    padding: 0 200px;
+    /* transform: translate3d(-50%, -50%, 0); */
+  }
+  .container input {
+    position: absolute;
+    left: -99em;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color: #00d7ff;
+    border-radius: 84px;
+  }
+  
+  .switch {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .pokeball {
+    top: -15px;
+    opacity: 1;
+    position: absolute;
+    height: 25px;
+    width: 50px;
+  }
+  .pokeball .middle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 35%;
+    top: 75%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    z-index: 1;
+  }
+  .pokeball .top {
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+    position: absolute;
+    background-color: #ba0202;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  .pokeball .bottom {
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    border-top: 2px solid #000000;
+    background-color: #ffffff;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .left {
+    left: 10%;
+  }
+  
+  .right {
+    right: 10%;
+  }
+  
+  .pikachu {
+    position: absolute;
+    top: -15px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffe62d;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    border-radius: 100%;
+  }
+  .pikachu .ear {
+    height: 40px;
+    width: 15px;
+    position: absolute;
+    top: -20px;
+    background-color: #f4dc26;
+    border-radius: 50%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    z-index: -2;
+    box-shadow: inset 0px 15px 0px 0px black;
+  }
+  .pikachu .eye {
+    height: 6px;
+    width: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    margin: 0 10px;
+  }
+  .pikachu .cheek {
+    height: 10px;
+    width: 10px;
+    background-color: #e92929;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 60%;
+    margin: 0 auto;
+  }
+  .pikachu .mouth {
+    background-color: #000000;
+    height: 5px;
+    width: 10px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+  }
+  
+  input:checked + .toggle {
+    background-color: #9d74b0;
+  }
+  input:checked + .toggle .switch {
+    transform: translate3d(-103px, 0, 0) rotate(0);
+  }
+  input:checked + .toggle .switch .pokeball {
+    opacity: 0;
+  }
+  input:checked + .toggle .switch .pikachu {
+    opacity: 1;
+  }
