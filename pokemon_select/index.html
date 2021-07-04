@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Select</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="pokemon-select-container" style="">
+        <div class="pokemon-images-container">
+            <div>Choose your six:</div>
+            <!-- ko foreach: loadedImages -->
+             
+            <!-- /ko -->
+        </div>
+
+        <div class="pokemon-stats-container">
+            <div class="pokemon-stats-wrapper">
+                <div>
+                    <img id="pokemon-stats-image" src="./selected/5.png" alt="Charmander" title="Charmander">
+                </div>
+                <div class="pokemon-stats-name">
+                    <span class="pokemon-name">Charmander</span>
+                </div>
+                <div class="pokemon-stats-details">
+
+                    <div class="pokemon-stats-hp">
+                        <div class="pokemon-stats-label">
+                            <div class="pokemon-stats-label-heading">HP</div>
+                            <div class="pokemon-stats-value pokemon-hp">39</div>
+                        </div>
+                        <div class="pokemon-stats-bar" id="pokemon-hp-bar">
+                            <div class="pokemon-stats-bar-value  pokemon-hp-bar-value" style="width: 20%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="pokemon-stats-atk">
+                        <div class="pokemon-stats-label">
+                            <div class="pokemon-stats-label-heading">ATK</div>
+                            <div class="pokemon-stats-value pokemon-atk">52</div>
+                        </div>
+                        <div class="pokemon-stats-bar" id="pokemon-atk-bar">
+                            <div class="pokemon-stats-bar-value pokemon-atk-bar-value" style="width: 26%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="add-button-container">
+                        <button class="add-pokemon-button" data-id="5">ADD</button>
+                        <button class="start-game-pokemon-button hide">Game</button>
+                    </div>
+
+                    <div class="max-pokemon-selected-error-text hide">
+                        You have selected 6 Pokemons.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="roster-container">
+        <div class="roster-team-name-container">
+            <div class="team-name-and-input-wrapper">
+                <div class="roster-team-name">
+                </div>
+                <div class="roster-team-name-input">
+                    <input class="pokemon-title-input" type="text" minlength="1" maxlength="10" value="Grammy Li">
+                </div>
+            </div>
+            <div class="roster-team-name-hint">(Double click to edit)</div>
+        </div>
+
+        <div class="roster-team-container">
+          
+        </div>
+    </div>
+    <div class="pokemon-game-container hide">
+        <h1 class="pokemon-title">Grammy Li - PopStar</h1>
+        <table id="id-table-field">
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <div class="credits">
+            Play more game: <a href="https://yylichao.gitee.io/projects/puzzle_photo/index.html"
+                target="_blank">puzzle photo</a> <a href="https://yylichao.gitee.io/magician/projects/pokemon/index.html"
+                target="_blank">/ pokemon card</a> 
+        </div>
+    </div>
+    <script src="./game.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+@import url('./font.css');
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+body{
+  margin: 0;
+}
+
+.pokemon-select-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pokemon-select-container > div{
+  width: 50%;
+}
+
+.pokemon-images-container{
+  text-align: center;
+}
+
+.pokemon-images-container > div:first-child{
+  font-family: "Shadows into light";
+  font-size: 24px;
+  color: #444;
+}
+
+.pink-border{
+  border: 1px solid #ffadcb !important;
+}
+
+.pokemon-images-container > img{
+  width: 20%;
+   
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.selected-pokemon{
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.pokemon-stats-container{
+  /* padding-left: 100px; */
+  /* margin-top: 50px; */
+  box-sizing: border-box;
+}
+
+.pokemon-stats-wrapper{
+  border: 1px solid #ddd;
+  border-right: none;
+  background: #f8f8f8;
+  padding: 3px;
+}
+
+.pokemon-stats-wrapper > div:first-child{
+  text-align: center;
+}
+
+#pokemon-stats-image{
+   width: 30%;
+}
+
+.pokemon-stats-name{
+   
+  font-family: "Shadows Into Light";
+  text-align: center;
+  font-size: 36px;
+  color: #666;
+}
+
+.pokemon-stats-details{
+  width: 85%;
+  margin: auto;
+}
+
+.pokemon-stats-details > div:not(.max-pokemon-selected-error-text){
+  margin: 2rem 0px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .pokemon-stats-details > div:not(.max-pokemon-selected-error-text){
+        margin: 0.5rem 0rem;
+        display: flex;
+        align-items: center;
+      }
+      .roster-team-name-input > input{
+        border: none;
+        border-bottom: 2px solid #eee;
+        background: transparent;
+        width: 100%;
+        font-size: 32px !important;
+        color: #fff;
+        font-family: "Shadows Into Light";
+        padding: 0px 5px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: -15px;
+      }
+      .roster-team-container{
+        width: 100% !important;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      td {
+        width: 31px !important;
+        height: 31px !important;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: #8ECC39;
+    }
+}
+.pokemon-stats-label{
+  display: flex;
+  width: 4.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-stats-label-heading{
+  font-family: "Shadows Into Light";
+  font-size: 18px;
+  line-height: 18px;
+  color: #666;
+}
+
+.pokemon-stats-value{
+  font-family: "Shadows Into Light";
+  font-size: 36px;
+  line-height: 36px;
+  color: #666;
+}
+
+.pokemon-stats-bar{
+  position: relative;
+  flex-grow: 1;
+  margin-left: 20px;
+  height: 16px;
+  background: #eee;
+}
+
+.pokemon-stats-bar-value{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #21a1e1;
+  transition: all 0.4s ease;
+}
+
+.add-pokemon-button{
+  font-family: "Shadows Into Light";
+  margin: auto;
+  margin-top: 20px;
+  padding: 6px 40px;
+  font-size: 24px;
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.start-game-pokemon-button {
+    font-family: "Shadows Into Light";
+    margin: auto;
+    margin-top: 20px;
+    padding: 6px 40px;
+    font-size: 24px;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+.add-disabled-button{
+  background: #ccc;
+  color: #888;
+  pointer-events: none;
+}
+
+.max-pokemon-selected-error-text{
+  color: red;
+  font-family: "Shadows into light";
+  text-align: center;
+}
+
+
+/*---------POKEMON ROSTER STYLES HERE-----------*/
+
+.roster-container{
+  margin-top: 100px;
+  padding: 120px 20px 180px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(#36AC5D, #61AE98);
+}
+
+.roster-team-name-container{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.roster-team-name{
+  font-size: 48px;
+  color: #fff;
+  font-family: "Shadows Into Light";
+  line-height: 48px;
+}
+
+.roster-team-name-hint{
+  width: 280px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Shadows Into Light";
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.roster-team-name-input > input{
+  border: none;
+  border-bottom: 2px solid #eee;
+  background: transparent;
+  width: 100%;
+  font-size: 42px;
+  color: #fff;
+  font-family: "Shadows Into Light";
+  padding: 0px 5px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.roster-team-container{
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.roster-pokemon-container{
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.roster-pokemon{
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  width: 110px;
+}
+
+.roster-pokemon img{
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.roster-pokemon-delete{
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  height: 30px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roster-pokemon-delete::after, 
+.roster-pokemon-delete::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 10px;
+  width: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  transform-origin: 50% 50%;
+}
+
+.roster-pokemon-delete::before{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.roster-pokemon-delete::after{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*---------_Footer styles below-----------*/
+
+.footer{
+  box-sizing: border-box;
+  padding: 40px 30px;
+  text-align: center;
+  background: #333;
+}
+
+.credits{
+  font-family: "Shadows Into Light";
+  color: #fff;
+  font-size: 20px;
+}
+
+.credits a{
+  color: orangered;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    /* background-image: url("Pictures/bg2.png"); */
+    border-spacing: 2px;
+    border-radius: 2px;
+}
+
+td {
+    width: 62px;
+    height: 62px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #8ECC39;
+}
+
+#id-span-score {
+    font-size: x-large;
+    font-weight: bold;
+    color: orangered;
+}
+
+.score-text {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.clickable {
+    background: forestgreen;
+    border-style: outset;
+}
+
+.highlighted {
+    border-color: lawngreen;
+    border-width: medium;
+    border-style: inset;
+}
+
+.p1 {
+    background-image: url("Pictures/1.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p2 {
+    background-image: url("Pictures/2.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p3 {
+    background-image: url("Pictures/3.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p4 {
+    background-image: url("Pictures/4.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p5 {
+    background-image: url("Pictures/5.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p6 {
+    background-image: url("Pictures/6.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p7 {
+    background-image: url("Pictures/7.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p8 {
+    background-image: url("Pictures/8.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p9 {
+    background-image: url("Pictures/9.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p10 {
+    background-image: url("Pictures/10.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p11 {
+    background-image: url("Pictures/11.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.p12 {
+    background-image: url("Pictures/12.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.pop {
+    background-image: url("Pictures/p.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.pokemon-game-container {
+    width: 100%;
+    height: 105vh;
+    margin: 0;
+    background: #faf8ef;
+    color: darkblue;
+    background-size: cover;
+    text-align: center;
+    background-image: url("Pictures/bg.png");
+    background-repeat: no-repeat;
+}
